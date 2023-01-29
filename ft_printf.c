@@ -6,7 +6,7 @@
 /*   By: amejia <amejia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 19:05:59 by amejia            #+#    #+#             */
-/*   Updated: 2023/01/29 23:34:37 by amejia           ###   ########.fr       */
+/*   Updated: 2023/01/29 23:46:57 by amejia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	process_string(char *str, va_list va_ptr, int *nchar)
 	if (tag_pos != 0)
 		np_char = (unsigned int)(tag_pos - str);
 	else
-		np_char=ft_strlen(str);
+		np_char = ft_strlen(str);
 	*nchar += np_char;
 	ft_putnstr_fd(str, 1, np_char);
 	if (tag_pos != 0)
